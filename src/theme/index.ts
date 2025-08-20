@@ -3,7 +3,6 @@ import components from './overrides';
 
 export const theme = createTheme({
   components,
-  cursorType: 'pointer',
   fontFamily: 'Inter, sans-serif',
   breakpoints: {
     xs: '30em',

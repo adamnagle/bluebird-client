@@ -19,7 +19,7 @@ interface EnhancedMutationParams<
   TContext = unknown,
 > extends Omit<
     UseMutationOptions<TData, TError, TVariables, TContext>,
-    'mutationFn' | 'onSuccess' | 'onError' | 'onSettled'
+    'mutationFn' | 'onSuccess' | 'onError' | 'onSettled' | 'onMutate'
   > {
   onSuccess?: (
     data: TData,
@@ -217,11 +217,11 @@ export function createPostMutationHook<
       ...rMutationParams,
       mutationFn,
       onSuccess: (data, variables, context) =>
-        rMutationParams?.onSuccess?.(data, variables, context, queryClient),
+        rMutationParams?.onSuccess?.(data as z.infer<ResponseSchema>, variables.variables, context, queryClient),
       onError: (error, variables, context) =>
-        rMutationParams?.onError?.(error, variables, context, queryClient),
+        rMutationParams?.onError?.(error, variables.variables, context, queryClient),
       onSettled: (data, error, variables, context) =>
-        rMutationParams?.onSettled?.(data, error, variables, context, queryClient),
+        rMutationParams?.onSettled?.(data as z.infer<ResponseSchema> | undefined, error, variables.variables, context, queryClient),
     });
   };
 }
@@ -294,11 +294,11 @@ export function createPutMutationHook<
       ...rMutationParams,
       mutationFn,
       onSuccess: (data, variables, context) =>
-        rMutationParams?.onSuccess?.(data, variables, context, queryClient),
+        rMutationParams?.onSuccess?.(data as z.infer<ResponseSchema>, variables.variables, context, queryClient),
       onError: (error, variables, context) =>
-        rMutationParams?.onError?.(error, variables, context, queryClient),
+        rMutationParams?.onError?.(error, variables.variables, context, queryClient),
       onSettled: (data, error, variables, context) =>
-        rMutationParams?.onSettled?.(data, error, variables, context, queryClient),
+        rMutationParams?.onSettled?.(data as z.infer<ResponseSchema> | undefined, error, variables.variables, context, queryClient),
     });
   };
 }
@@ -358,11 +358,11 @@ export function createDeleteMutationHook<
       ...rMutationParams,
       mutationFn,
       onSuccess: (data, variables, context) =>
-        rMutationParams?.onSuccess?.(data, variables, context, queryClient),
+        rMutationParams?.onSuccess?.(data as z.infer<ModelSchema>, variables.model, context, queryClient),
       onError: (error, variables, context) =>
-        rMutationParams?.onError?.(error, variables, context, queryClient),
+        rMutationParams?.onError?.(error, variables.model, context, queryClient),
       onSettled: (data, error, variables, context) =>
-        rMutationParams?.onSettled?.(data, error, variables, context, queryClient),
+        rMutationParams?.onSettled?.(data as z.infer<ModelSchema> | undefined, error, variables.model, context, queryClient),
     });
   };
 }

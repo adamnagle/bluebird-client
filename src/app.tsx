@@ -1,14 +1,14 @@
-import '@mantine/carousel/styles.layer.css';
-import '@mantine/charts/styles.layer.css';
-import '@mantine/code-highlight/styles.layer.css';
-import '@mantine/core/styles.layer.css';
-import '@mantine/dates/styles.layer.css';
-import '@mantine/dropzone/styles.layer.css';
-import '@mantine/notifications/styles.layer.css';
-import '@mantine/nprogress/styles.layer.css';
-import '@mantine/spotlight/styles.layer.css';
-import '@mantine/tiptap/styles.layer.css';
-import 'mantine-datatable/styles.layer.css';
+import '@mantine/carousel/styles.css';
+import '@mantine/charts/styles.css';
+import '@mantine/code-highlight/styles.css';
+import '@mantine/core/styles.css';
+import '@mantine/dates/styles.css';
+import '@mantine/dropzone/styles.css';
+import '@mantine/notifications/styles.css';
+import '@mantine/nprogress/styles.css';
+import '@mantine/spotlight/styles.css';
+import '@mantine/tiptap/styles.css';
+import 'mantine-datatable/styles.css';
 import './global.css';
 
 import { QueryClientProvider } from '@tanstack/react-query';

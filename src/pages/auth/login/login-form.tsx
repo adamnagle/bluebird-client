@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { Anchor, Button, Group, Stack, StackProps } from '@mantine/core';
-import { useForm, zodResolver } from '@mantine/form';
+import { useForm } from '@mantine/form';
+import { zodResolver } from 'mantine-form-zod-resolver';
 import { LoginRequestSchema } from '@/api/dtos';
 import { Checkbox } from '@/components/forms/checkbox';
 import { FormProvider } from '@/components/forms/form-provider';
