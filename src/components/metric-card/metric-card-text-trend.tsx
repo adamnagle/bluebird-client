@@ -1,8 +1,7 @@
+import { PiTrendDown, PiTrendUp } from 'react-icons/pi';
 import { Flex, Text } from '@mantine/core';
-import { PiTrendUp, PiTrendDown } from 'react-icons/pi';
-
-import { formatPercentage } from '@/utilities/number';
 import { match } from '@/utilities/match';
+import { formatPercentage } from '@/utilities/number';
 import { MetricCardTextMuted, MetricCardTextMutedProps } from './metric-card-text-muted';
 
 interface MetricCardTextTrendProps extends MetricCardTextMutedProps {

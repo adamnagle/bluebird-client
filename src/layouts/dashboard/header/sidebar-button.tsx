@@ -1,8 +1,7 @@
 import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Drawer } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import { useLocation } from 'react-router-dom';
-
 import { HamburgerButton } from '@/components/hamburger-button';
 import { Logo } from '@/components/logo';
 import { Sidebar } from '../sidebar';

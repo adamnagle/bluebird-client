@@ -1,5 +1,4 @@
-import { ComponentType, ElementType, Suspense, lazy } from 'react';
-
+import { ComponentType, ElementType, lazy, Suspense } from 'react';
 import { LoadingScreen } from '@/components/loading-screen';
 
 const Loadable = (Component: ElementType) => (props: any) => (

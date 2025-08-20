@@ -1,10 +1,10 @@
-import { Spotlight, SpotlightActionData } from '@mantine/spotlight';
 import {
+  PiFileDuotone,
   PiHouseDuotone,
   PiSquaresFourDuotone,
-  PiFileDuotone,
   PiMagnifyingGlassBold as SearchIcon,
 } from 'react-icons/pi';
+import { Spotlight, SpotlightActionData } from '@mantine/spotlight';
 
 const actions: SpotlightActionData[] = [
   {

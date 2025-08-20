@@ -1,6 +1,5 @@
 import clsx from 'clsx';
 import { ActionIcon, ActionIconProps, ElementProps } from '@mantine/core';
-
 import classes from './hamburger-button.module.css';
 
 type HamburgerButtonProps = ElementProps<'button', keyof ActionIconProps> &

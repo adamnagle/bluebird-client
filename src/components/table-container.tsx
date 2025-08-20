@@ -1,6 +1,5 @@
 import { ReactNode } from 'react';
 import { Card, CardProps } from '@mantine/core';
-
 import { CardTitle } from './card-title';
 
 interface TableContainerProps extends CardProps {

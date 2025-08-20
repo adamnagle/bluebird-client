@@ -1,5 +1,4 @@
 import { createTheme } from '@mantine/core';
-
 import components from './overrides';
 
 export const theme = createTheme({

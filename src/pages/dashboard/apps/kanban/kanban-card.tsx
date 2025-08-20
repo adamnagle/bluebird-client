@@ -1,6 +1,6 @@
 import {
-  PiChatDuotone as CommentsIcon,
   PiPaperclipDuotone as AttachmentsIcon,
+  PiChatDuotone as CommentsIcon,
 } from 'react-icons/pi';
 import { Avatar, Badge, Card, Group, Stack, Text, Title } from '@mantine/core';
 

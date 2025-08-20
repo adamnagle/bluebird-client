@@ -1,5 +1,4 @@
 import { Card } from '@mantine/core';
-
 import classes from './card.module.css';
 
 export default {

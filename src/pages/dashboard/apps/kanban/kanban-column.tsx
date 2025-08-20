@@ -1,8 +1,8 @@
 import {
-  PiDotsThreeVerticalBold as MenuIcon,
-  PiPencilDuotone as EditIcon,
-  PiTrashDuotone as DeleteIcon,
   PiBroomDuotone as ClearIcon,
+  PiTrashDuotone as DeleteIcon,
+  PiPencilDuotone as EditIcon,
+  PiDotsThreeVerticalBold as MenuIcon,
 } from 'react-icons/pi';
 import { ActionIcon, Button, Card, Flex, FlexProps, Group, Menu, Title } from '@mantine/core';
 

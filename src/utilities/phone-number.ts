@@ -1,5 +1,5 @@
-import { z } from 'zod';
 import parsePhoneNumber, { isValidPhoneNumber as baseIsValidPhoneNumber } from 'libphonenumber-js';
+import { z } from 'zod';
 
 export const isValidPhoneNumber = (value: string) => baseIsValidPhoneNumber(value);
 

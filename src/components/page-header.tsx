@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import { NavLink } from 'react-router-dom';
-import { GroupProps, ElementProps, Title, Breadcrumbs, Anchor, Text, Group } from '@mantine/core';
+import { Anchor, Breadcrumbs, ElementProps, Group, GroupProps, Text, Title } from '@mantine/core';
 
 interface PageHeaderProps
   extends Omit<GroupProps, 'title'>,

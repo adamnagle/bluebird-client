@@ -4,13 +4,16 @@ import paths from './paths';
 
 const posts = import.meta.glob('/src/pages/docs/**/*.mdx', { eager: true });
 
-const postRoutes = Object.keys(posts).map((path) => {
-  const slug = path.split('/src/pages/docs/').at(-1)?.replace('.mdx', '');
-  return {
-    path: paths.page(slug),
-    element: LazyPage(() => posts[path]),
-  };
-});
+const postRoutes = Object.keys(posts)
+  .map((path) => {
+    const slug = path.split('/src/pages/docs/').at(-1)?.replace('.mdx', '');
+    if (!slug) return null;
+    return {
+      path: paths.page(slug),
+      element: LazyPage(() => posts[path] as any),
+    };
+  })
+  .filter((route): route is NonNullable<typeof route> => route !== null);
 
 export default [
   {

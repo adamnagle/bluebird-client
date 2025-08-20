@@ -1,10 +1,10 @@
 import {
+  alpha,
+  ElementProps,
   RingProgress,
   RingProgressProps,
-  ElementProps,
   Text,
   TextProps,
-  alpha,
 } from '@mantine/core';
 import { match } from '@/utilities/match';
 

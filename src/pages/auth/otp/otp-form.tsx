@@ -1,4 +1,4 @@
-import { Button, Stack, StackProps, PinInput } from '@mantine/core';
+import { Button, PinInput, Stack, StackProps } from '@mantine/core';
 
 interface OtpFormProps extends Omit<StackProps, 'children'> {
   onSuccess?: () => void;

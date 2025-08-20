@@ -1,19 +1,19 @@
+import { USD } from '@dinero.js/currencies';
 import {
-  toDecimal,
-  dinero,
   add,
-  subtract,
+  dinero,
+  equal,
+  isNegative,
+  isPositive,
+  isZero,
   multiply,
+  subtract,
+  toDecimal,
   toSnapshot,
   transformScale,
   up,
-  isZero,
-  isNegative,
-  isPositive,
-  equal,
   type Dinero,
 } from 'dinero.js';
-import { USD } from '@dinero.js/currencies';
 import { formatCurrency } from './number';
 
 const CURRENCY = USD;

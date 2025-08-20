@@ -1,6 +1,6 @@
 import { forwardRef } from 'react';
-import { Button, type ButtonProps, createPolymorphicComponent } from '@mantine/core';
 import { PiPlus as AddIcon } from 'react-icons/pi';
+import { Button, createPolymorphicComponent, type ButtonProps } from '@mantine/core';
 
 export type AddButtonProps = Omit<ButtonProps, 'leftSection'>;
 
