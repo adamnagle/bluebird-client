@@ -134,6 +134,73 @@ const router = createBrowserRouter([
             path: paths.dashboard.widgets.tables,
             element: LazyPage(() => import('@/pages/dashboard/widgets/tables')),
           },
+          // Application UI routes
+          {
+            path: paths.dashboard.widgets.applicationUi.authentication,
+            element: LazyPage(() => import('@/pages/dashboard/widgets/application-ui/authentication')),
+          },
+          {
+            path: paths.dashboard.widgets.applicationUi.forms,
+            element: LazyPage(() => import('@/pages/dashboard/widgets/application-ui/forms')),
+          },
+          {
+            path: paths.dashboard.widgets.applicationUi.overlays,
+            element: LazyPage(() => import('@/pages/dashboard/widgets/application-ui/overlays')),
+          },
+          {
+            path: paths.dashboard.widgets.applicationUi.navigation,
+            element: LazyPage(() => import('@/pages/dashboard/widgets/application-ui/navigation')),
+          },
+          {
+            path: paths.dashboard.widgets.applicationUi.feedback,
+            element: LazyPage(() => import('@/pages/dashboard/widgets/application-ui/feedback')),
+          },
+          {
+            path: paths.dashboard.widgets.applicationUi.dataDisplay,
+            element: LazyPage(() => import('@/pages/dashboard/widgets/application-ui/data-display')),
+          },
+          // Page sections routes
+          {
+            path: paths.dashboard.widgets.pageSections.hero,
+            element: LazyPage(() => import('@/pages/dashboard/widgets/page-sections/hero')),
+          },
+          {
+            path: paths.dashboard.widgets.pageSections.features,
+            element: LazyPage(() => import('@/pages/dashboard/widgets/page-sections/features')),
+          },
+          {
+            path: paths.dashboard.widgets.pageSections.pricing,
+            element: LazyPage(() => import('@/pages/dashboard/widgets/page-sections/pricing')),
+          },
+          {
+            path: paths.dashboard.widgets.pageSections.contact,
+            element: LazyPage(() => import('@/pages/dashboard/widgets/page-sections/contact')),
+          },
+          {
+            path: paths.dashboard.widgets.pageSections.faq,
+            element: LazyPage(() => import('@/pages/dashboard/widgets/page-sections/faq')),
+          },
+          {
+            path: paths.dashboard.widgets.pageSections.footers,
+            element: LazyPage(() => import('@/pages/dashboard/widgets/page-sections/footers')),
+          },
+          // Blog UI routes
+          {
+            path: paths.dashboard.widgets.blogUi.articleCards,
+            element: LazyPage(() => import('@/pages/dashboard/widgets/blog-ui/article-cards')),
+          },
+          {
+            path: paths.dashboard.widgets.blogUi.comments,
+            element: LazyPage(() => import('@/pages/dashboard/widgets/blog-ui/comments')),
+          },
+          {
+            path: paths.dashboard.widgets.blogUi.layouts,
+            element: LazyPage(() => import('@/pages/dashboard/widgets/blog-ui/layouts')),
+          },
+          {
+            path: paths.dashboard.widgets.blogUi.authors,
+            element: LazyPage(() => import('@/pages/dashboard/widgets/blog-ui/authors')),
+          },
         ],
       },
     ],

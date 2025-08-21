@@ -1,7 +1,6 @@
 import { Badge, MultiSelect, Radio, Stack, TextInput } from '@mantine/core';
 import { usePagination } from '@/api/helpers';
-import { DataTable } from '@/components/data-table';
-import { ExportButton } from '@/components/export-button';
+import { DataTable, ExportButton } from '@/components';
 import { useGetCompanies } from '@/hooks';
 
 export function AdvancedDataTable() {

@@ -1,0 +1,202 @@
+/* FAQ Simple styles */
+.wrapper {
+  padding-top: calc(var(--mantine-spacing-xl) * 2);
+  min-height: 820px;
+  background-image: radial-gradient(
+    var(--mantine-color-blue-6) 0%,
+    var(--mantine-color-blue-4) 100%
+  );
+  background-repeat: no-repeat;
+  background-position: top left;
+  position: relative;
+  color: var(--mantine-color-black);
+}
+
+.title {
+  color: var(--mantine-color-white);
+  font-size: 52px;
+  font-family: var(--mantine-font-family);
+  font-weight: 500;
+  margin-bottom: calc(var(--mantine-spacing-xl) * 1.5);
+}
+
+.item {
+  background-color: var(--mantine-color-white) !important;
+  border-bottom: 0;
+  border-radius: var(--mantine-radius-md);
+  box-shadow: var(--mantine-shadow-lg);
+  overflow: hidden;
+}
+
+.gradient {
+  background-image: radial-gradient(
+    var(--mantine-color-blue-6) 0%,
+    var(--mantine-color-blue-5) 100%
+  );
+}
+
+/* FAQ with Header styles */
+.headerWrapper {
+  padding-top: var(--mantine-spacing-md);
+  padding-bottom: calc(var(--mantine-spacing-xl) * 2);
+}
+
+.header {
+  height: 400px;
+  padding-top: var(--mantine-spacing-md);
+  background-image: linear-gradient(
+    135deg,
+    var(--mantine-color-blue-4) 0%,
+    var(--mantine-color-blue-6) 100%
+  );
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+  padding: calc(var(--mantine-spacing-xl) * 1.5) calc(var(--mantine-spacing-xl) * 2);
+  border-radius: var(--mantine-radius-lg);
+  margin-bottom: var(--mantine-spacing-lg);
+}
+
+@media (max-width: 68em) {
+  .header {
+    height: auto;
+    flex-direction: column-reverse;
+    align-items: initial;
+    padding: var(--mantine-spacing-xl);
+  }
+}
+
+.headerTitle {
+  color: var(--mantine-color-white);
+  position: relative;
+  z-index: 1;
+  font-size: 46px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  font-family: var(--mantine-font-family);
+}
+
+@media (max-width: 68em) {
+  .headerTitle {
+    font-size: 22px;
+    text-align: center;
+    margin-top: var(--mantine-spacing-xl);
+  }
+}
+
+.titleOverlay {
+  z-index: 0;
+  position: absolute;
+  color: var(--mantine-color-white);
+  font-weight: 500;
+  opacity: 0.1;
+  font-size: 320px;
+  line-height: 1;
+  top: 10px;
+  left: 45px;
+  pointer-events: none;
+  font-family: var(--mantine-font-family);
+}
+
+@media (max-width: 68em) {
+  .titleOverlay {
+    display: none;
+  }
+}
+
+.contact {
+  padding: calc(var(--mantine-spacing-xl) * 1.5);
+  background-color: var(--mantine-color-white);
+  border-radius: var(--mantine-radius-lg);
+  box-shadow: var(--mantine-shadow-md);
+  align-self: center;
+}
+
+@media (max-width: 68em) {
+  .contact {
+    padding: var(--mantine-spacing-xl);
+  }
+}
+
+.contactTitle {
+  color: var(--mantine-color-black);
+  margin-bottom: var(--mantine-spacing-xl);
+  line-height: 1;
+}
+
+.categoryCard {
+  height: 160px;
+  position: relative;
+  background-size: 100%;
+  background-position: center;
+  color: var(--mantine-color-white);
+  border-radius: var(--mantine-radius-lg);
+  padding: var(--mantine-spacing-xl);
+  overflow: hidden;
+  transition: background-size 300ms ease;
+}
+
+.categoryCard:hover {
+  background-size: 105%;
+}
+
+.categoryLabel {
+  color: var(--mantine-color-white);
+  z-index: 2;
+  position: relative;
+}
+
+/* Contact Icons styles */
+.contactWrapper {
+  display: flex;
+  align-items: center;
+  color: var(--mantine-color-white);
+}
+
+.contactIcon {
+  margin-right: var(--mantine-spacing-md);
+  background-image: linear-gradient(
+    135deg,
+    var(--mantine-color-blue-4) 0%,
+    var(--mantine-color-blue-6) 100%
+  );
+}
+
+.contactTitle {
+  color: var(--mantine-color-gray-6);
+}
+
+.contactDescription {
+  color: var(--mantine-color-black);
+}
+
+/* FAQ with Image styles */
+.imageWrapper {
+  padding-top: calc(var(--mantine-spacing-xl) * 2);
+  padding-bottom: calc(var(--mantine-spacing-xl) * 2);
+}
+
+.imageTitle {
+  margin-bottom: var(--mantine-spacing-md);
+  padding-left: var(--mantine-spacing-md);
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  font-family: var(--mantine-font-family);
+  font-weight: 500;
+}
+
+.imageItem {
+  font-size: var(--mantine-font-size-sm);
+  color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-1));
+}
+
+.imagePlaceholder {
+  height: 300px;
+  background-color: light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-8));
+  border-radius: var(--mantine-radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed var(--mantine-color-gray-4);
+}

@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { Drawer } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { HamburgerButton } from '@/components/hamburger-button';
-import { Logo } from '@/components/logo';
+import { Logo } from '@/components';
 import { DocsSideBar } from '../sidebar';
 
 export function SidebarButton() {

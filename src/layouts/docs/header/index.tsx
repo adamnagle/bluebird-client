@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Group } from '@mantine/core';
-import { ColorSchemeToggler } from '@/components/color-scheme-toggler';
-import { Logo } from '@/components/logo';
+import { ColorSchemeToggler, Logo } from '@/components';
 import { SpotlightSearchBarButton } from '@/components/spotlight-search-bar-button';
 import { StickyHeader } from '@/components/sticky-header';
 import { SearchMenu } from './search-menu';

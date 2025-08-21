@@ -1,5 +1,5 @@
 import { forwardRef } from 'react';
-import { MoneyInput as BaseInput, MoneyInputProps as BaseProps } from '../money-input';
+import { MoneyInput as BaseInput, type MoneyInputProps as BaseProps } from '@/components';
 import { useForm } from './form-provider';
 
 export interface MoneyInputProps

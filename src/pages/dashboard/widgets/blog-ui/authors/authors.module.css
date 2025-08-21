@@ -1,0 +1,28 @@
+/* User Button styles */
+.user {
+  display: block;
+  width: 100%;
+  padding: var(--mantine-spacing-xs);
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  border-radius: var(--mantine-radius-sm);
+}
+
+.user:hover {
+  background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-8));
+}
+
+/* User Info Icons styles */
+.name {
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+}
+
+.icon {
+  color: light-dark(var(--mantine-color-gray-5), var(--mantine-color-dark-2));
+}
+
+/* Responsive adjustments */
+@media (max-width: 48em) {
+  .user {
+    padding: var(--mantine-spacing-md);
+  }
+}

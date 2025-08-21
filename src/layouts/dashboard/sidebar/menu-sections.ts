@@ -91,6 +91,91 @@ export const menu: MenuItem[] = [
         href: paths.dashboard.widgets.tables,
         icon: PiTableDuotone,
       },
+      {
+        name: 'Application UI',
+        href: paths.dashboard.widgets.applicationUi.forms,
+        icon: PiSquaresFourDuotone,
+        dropdownItems: [
+          {
+            name: 'Authentication',
+            href: paths.dashboard.widgets.applicationUi.authentication,
+          },
+          {
+            name: 'Forms',
+            href: paths.dashboard.widgets.applicationUi.forms,
+          },
+          {
+            name: 'Overlays',
+            href: paths.dashboard.widgets.applicationUi.overlays,
+          },
+          {
+            name: 'Navigation',
+            href: paths.dashboard.widgets.applicationUi.navigation,
+          },
+          {
+            name: 'Feedback',
+            href: paths.dashboard.widgets.applicationUi.feedback,
+          },
+          {
+            name: 'Data Display',
+            href: paths.dashboard.widgets.applicationUi.dataDisplay,
+          },
+        ],
+      },
+      {
+        name: 'Page sections',
+        href: paths.dashboard.widgets.pageSections.hero,
+        icon: PiFilesDuotone,
+        dropdownItems: [
+          {
+            name: 'Hero',
+            href: paths.dashboard.widgets.pageSections.hero,
+          },
+          {
+            name: 'Features',
+            href: paths.dashboard.widgets.pageSections.features,
+          },
+          {
+            name: 'Pricing',
+            href: paths.dashboard.widgets.pageSections.pricing,
+          },
+          {
+            name: 'Contact',
+            href: paths.dashboard.widgets.pageSections.contact,
+          },
+          {
+            name: 'FAQ',
+            href: paths.dashboard.widgets.pageSections.faq,
+          },
+          {
+            name: 'Footers',
+            href: paths.dashboard.widgets.pageSections.footers,
+          },
+        ],
+      },
+      {
+        name: 'Blog UI',
+        href: paths.dashboard.widgets.blogUi.articleCards,
+        icon: PiChatCenteredDotsDuotone,
+        dropdownItems: [
+          {
+            name: 'Article Cards',
+            href: paths.dashboard.widgets.blogUi.articleCards,
+          },
+          {
+            name: 'Comments',
+            href: paths.dashboard.widgets.blogUi.comments,
+          },
+          {
+            name: 'Layouts',
+            href: paths.dashboard.widgets.blogUi.layouts,
+          },
+          {
+            name: 'Authors',
+            href: paths.dashboard.widgets.blogUi.authors,
+          },
+        ],
+      },
     ],
   },
 

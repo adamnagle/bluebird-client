@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import { Paper, ScrollArea } from '@mantine/core';
-import { Logo } from '@/components/logo';
+import { Logo } from '@/components';
 import { Header } from '../header';
 import { Sidebar } from '../sidebar';
 import classes from './root.module.css';

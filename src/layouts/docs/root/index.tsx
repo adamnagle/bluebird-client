@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import { ScrollArea } from '@mantine/core';
-import { Logo } from '@/components/logo';
+import { Logo } from '@/components';
 import { MDXProvider } from '@/providers/mdx-provider';
 import { Header } from '../header';
 import { DocsSideBar } from '../sidebar';

@@ -1,0 +1,37 @@
+/* Comment HTML styles */
+.comment {
+  padding: var(--mantine-spacing-lg);
+}
+
+.body {
+  padding-left: calc(54px + var(--mantine-spacing-sm));
+  padding-top: var(--mantine-spacing-sm);
+  font-size: var(--mantine-font-size-sm);
+}
+
+.content {
+  & > p {
+    margin: 0;
+  }
+
+  & a {
+    color: var(--mantine-color-blue-6);
+    text-decoration: none;
+  }
+
+  & a:hover {
+    text-decoration: underline;
+  }
+
+  & strong {
+    font-weight: 600;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 48em) {
+  .body {
+    padding-left: 0;
+    padding-top: var(--mantine-spacing-md);
+  }
+}

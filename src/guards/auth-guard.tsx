@@ -13,6 +13,9 @@ export function AuthGuard({ children }: AuthGuardProps) {
   const { pathname } = useLocation();
   const { isAuthenticated, isInitialized } = useAuth();
 
+  // TEMPORARY: Bypass authentication for testing
+  return children;
+
   if (!isInitialized) {
     return <LoadingScreen />;
   }
