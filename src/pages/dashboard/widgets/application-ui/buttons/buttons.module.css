@@ -1,0 +1,102 @@
+/* Split Button styles */
+.button {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+}
+
+.menuControl {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Progress Button styles */
+.progressButton {
+  position: relative;
+  transition: background-color 150ms ease;
+}
+
+.progressButton:not(:disabled):hover {
+  background-color: var(--mantine-color-blue-6);
+}
+
+.progressButton:not(:disabled):hover .progress {
+  background-color: var(--mantine-color-blue-6);
+}
+
+.progress {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  height: auto;
+  background-color: transparent;
+  z-index: 0;
+}
+
+.label {
+  position: relative;
+  z-index: 2;
+}
+
+/* Floating Action Button styles */
+.fab {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 200ms ease;
+  border-radius: 50% !important;
+}
+
+.fab:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.fabSecondary {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 200ms ease;
+  border-radius: 50% !important;
+}
+
+.fabSecondary:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+/* Dark theme adjustments */
+[data-mantine-color-scheme="dark"] .progressButton:not(:disabled):hover {
+  background-color: var(--mantine-color-blue-5);
+}
+
+[data-mantine-color-scheme="dark"] .progressButton:not(:disabled):hover .progress {
+  background-color: var(--mantine-color-blue-5);
+}
+
+[data-mantine-color-scheme="dark"] .fab {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+[data-mantine-color-scheme="dark"] .fab:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+[data-mantine-color-scheme="dark"] .fabSecondary {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+[data-mantine-color-scheme="dark"] .fabSecondary:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .fab {
+    bottom: 12px;
+    right: 12px;
+  }
+  
+  .fabSecondary {
+    bottom: 72px;
+    right: 12px;
+  }
+}

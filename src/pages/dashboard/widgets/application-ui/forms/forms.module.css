@@ -1,66 +1,36 @@
-/* Floating Label Input Styles */
-.root {
+.floating {
   position: relative;
+  margin-top: 1.5rem;
 }
 
 .label {
   position: absolute;
   z-index: 2;
-  top: 7px;
-  left: var(--mantine-spacing-sm);
+  top: 0.5rem;
   pointer-events: none;
-  color: light-dark(var(--mantine-color-gray-5), var(--mantine-color-dark-3));
-  transition:
-    transform 150ms ease,
-    font-size 150ms ease,
-    color 150ms ease;
+  color: var(--mantine-color-gray-5);
+  transition: transform 120ms ease, color 120ms ease, font-weight 120ms ease;
+  transform: translate(1rem, 0.5rem);
+  font-size: var(--mantine-font-size-sm);
 }
 
 .label[data-floating] {
-  transform: translate(calc(var(--mantine-spacing-sm) * -1), -28px);
-  font-size: var(--mantine-font-size-xs);
+  transform: translate(0, -1.5rem);
   font-weight: 500;
-  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
-}
-
-.required {
-  transition: opacity 150ms ease;
-  opacity: 0;
-}
-
-[data-floating] .required {
-  opacity: 1;
-}
-
-.input::placeholder {
-  transition: color 150ms ease;
-  color: transparent;
-}
-
-.input[data-floating]::placeholder {
-  color: var(--mantine-color-placeholder);
-}
-
-/* Contained Inputs Styles */
-.input {
-  height: 54px;
-  padding-top: 18px;
-}
-
-.label {
-  position: absolute;
-  pointer-events: none;
+  color: var(--mantine-primary-color-filled);
   font-size: var(--mantine-font-size-xs);
-  padding-left: var(--mantine-spacing-sm);
-  padding-top: calc(var(--mantine-spacing-sm) / 2);
-  z-index: 1;
 }
 
-/* Input Validation Styles */
+.input {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
 .invalid {
-  background-color: var(--mantine-color-red-light);
+  color: var(--mantine-color-red-7);
+  border-color: var(--mantine-color-red-7);
 }
 
 .icon {
-  color: light-dark(var(--mantine-color-red-6), var(--mantine-color-red-7));
+  color: var(--mantine-color-red-7);
 }

@@ -1,0 +1,90 @@
+.header {
+  padding-left: var(--mantine-spacing-md);
+  padding-right: var(--mantine-spacing-md);
+  border-bottom: 1px solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+}
+
+.inner {
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: var(--mantine-spacing-sm);
+  padding-right: var(--mantine-spacing-sm);
+  text-decoration: none;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  font-weight: 500;
+  font-size: var(--mantine-font-size-sm);
+}
+
+.link:hover {
+  background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
+}
+
+.link[data-active] {
+  background-color: var(--mantine-color-blue-light);
+  color: var(--mantine-color-blue-light-color);
+  border-bottom: 2px solid var(--mantine-color-blue-filled);
+}
+
+.linkLabel {
+  margin-right: 5px;
+}
+
+.mainSection {
+  padding-bottom: var(--mantine-spacing-md);
+}
+
+.user {
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  padding: var(--mantine-spacing-xs) var(--mantine-spacing-sm);
+  border-radius: var(--mantine-radius-sm);
+  transition: background-color 100ms ease;
+}
+
+.user:hover {
+  background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-8));
+}
+
+.userActive {
+  background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-8));
+}
+
+.tabs {
+  border-bottom: 0;
+}
+
+.tabsList {
+  border: none;
+  padding-top: var(--mantine-spacing-md);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.tab {
+  font-weight: 500;
+  height: 38px;
+  background-color: transparent;
+  color: light-dark(var(--mantine-color-gray-5), var(--mantine-color-dark-3));
+  border: 1px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-radius: var(--mantine-radius-md) var(--mantine-radius-md) 0 0;
+}
+
+.tab:hover {
+  background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-7));
+  border-color: light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+}
+
+.tab[data-active] {
+  background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-7));
+  border-color: light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  border-bottom-color: var(--mantine-color-blue-filled);
+}

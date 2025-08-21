@@ -1,0 +1,134 @@
+.toc {
+  max-width: 300px;
+}
+
+.tocItem {
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.15s ease;
+  text-decoration: none;
+  color: var(--mantine-color-text);
+  font-weight: 500;
+}
+
+.tocItem:hover {
+  background-color: var(--mantine-color-gray-1);
+  text-decoration: none;
+}
+
+.tocSubItem {
+  padding: 4px 12px;
+  font-size: 0.875rem;
+  color: var(--mantine-color-dimmed);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.15s ease;
+}
+
+.tocSubItem:hover {
+  background-color: var(--mantine-color-gray-0);
+  text-decoration: none;
+}
+
+.floatingToc {
+  max-width: 250px;
+  position: relative;
+}
+
+.floatingItem {
+  padding: 6px 0;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--mantine-color-text);
+  border-left: 2px solid transparent;
+  padding-left: 12px;
+  transition: all 0.15s ease;
+}
+
+.floatingItem:hover {
+  text-decoration: none;
+  border-left-color: var(--mantine-color-blue-5);
+  color: var(--mantine-color-blue-6);
+}
+
+.hashToc {
+  padding: 16px;
+  border: 1px solid var(--mantine-color-gray-3);
+  border-radius: 8px;
+}
+
+.hashItem {
+  padding: 4px 8px;
+  background-color: var(--mantine-color-gray-1);
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: var(--mantine-color-blue-6);
+  transition: background-color 0.15s ease;
+}
+
+.hashItem:hover {
+  background-color: var(--mantine-color-blue-1);
+  text-decoration: none;
+}
+
+.stickyToc {
+  max-width: 200px;
+  position: sticky;
+  top: 20px;
+}
+
+.stickyItem {
+  padding: 8px 0;
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: var(--mantine-color-text);
+  position: relative;
+  transition: color 0.15s ease;
+}
+
+.stickyItem:hover {
+  color: var(--mantine-color-blue-6);
+  text-decoration: none;
+}
+
+.stickyItem::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--mantine-color-gray-4);
+  transition: background-color 0.15s ease;
+}
+
+.stickyItem:hover::before {
+  background-color: var(--mantine-color-blue-5);
+}
+
+@media (prefers-color-scheme: dark) {
+  .tocItem:hover {
+    background-color: var(--mantine-color-dark-6);
+  }
+  
+  .tocSubItem:hover {
+    background-color: var(--mantine-color-dark-7);
+  }
+  
+  .hashItem {
+    background-color: var(--mantine-color-dark-6);
+    color: var(--mantine-color-blue-4);
+  }
+  
+  .hashItem:hover {
+    background-color: var(--mantine-color-dark-5);
+  }
+  
+  .hashToc {
+    border-color: var(--mantine-color-dark-4);
+  }
+}

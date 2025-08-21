@@ -1,0 +1,230 @@
+/* Email Banner styles */
+.wrapper {
+  min-height: 400px;
+  background-size: cover;
+  background-image: linear-gradient(250deg, rgba(130, 201, 30, 0) 0%, #764ba2 70%), url(https://images.unsplash.com/photo-1484242857719-4b9144542727?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1280&q=80);
+  padding: var(--mantine-spacing-xl);
+  border-radius: var(--mantine-radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--mantine-spacing-xl);
+}
+
+.body {
+  max-width: 500px;
+}
+
+.title {
+  color: var(--mantine-color-white);
+  font-family: Outfit, var(--mantine-font-family);
+  line-height: 1;
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: var(--mantine-spacing-md);
+}
+
+.controls {
+  display: flex;
+  margin-top: var(--mantine-spacing-xl);
+}
+
+.inputWrapper {
+  flex: 1;
+}
+
+.input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+}
+
+.control {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.image {
+  flex: 0 0 300px;
+  height: 200px;
+}
+
+.imagePlaceholder {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--mantine-radius-md);
+  backdrop-filter: blur(10px);
+}
+
+/* Image Action Banner styles */
+.card {
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+  border-radius: var(--mantine-radius-md);
+}
+
+.card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.category {
+  color: var(--mantine-color-white);
+  opacity: 0.7;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.cardTitle {
+  color: var(--mantine-color-white);
+  line-height: 1.2;
+}
+
+/* Status Banner styles */
+.successBanner {
+  background-color: rgba(47, 158, 68, 0.1);
+  border-color: var(--mantine-color-green-5);
+  padding: var(--mantine-spacing-md);
+}
+
+.successIcon {
+  color: var(--mantine-color-green-6);
+}
+
+.successTitle {
+  color: var(--mantine-color-green-8);
+}
+
+.warningBanner {
+  background-color: rgba(250, 176, 5, 0.1);
+  border-color: var(--mantine-color-yellow-5);
+  padding: var(--mantine-spacing-md);
+}
+
+.warningIcon {
+  color: var(--mantine-color-yellow-6);
+}
+
+.warningTitle {
+  color: var(--mantine-color-yellow-8);
+}
+
+.infoBanner {
+  background-color: rgba(34, 139, 230, 0.1);
+  border-color: var(--mantine-color-blue-5);
+  padding: var(--mantine-spacing-md);
+}
+
+.infoIcon {
+  color: var(--mantine-color-blue-6);
+}
+
+.infoTitle {
+  color: var(--mantine-color-blue-8);
+}
+
+/* Promotion Banner styles */
+.promotionBanner {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: var(--mantine-spacing-md) 0;
+}
+
+/* App Download Banner styles */
+.appBanner {
+  background: var(--mantine-color-gray-0);
+  border-color: var(--mantine-color-gray-3);
+}
+
+.appIcon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--mantine-color-blue-0);
+  border-radius: var(--mantine-radius-sm);
+}
+
+/* Dark theme adjustments */
+[data-mantine-color-scheme="dark"] .appBanner {
+  background: var(--mantine-color-dark-6);
+  border-color: var(--mantine-color-dark-4);
+}
+
+[data-mantine-color-scheme="dark"] .appIcon {
+  background: var(--mantine-color-dark-5);
+}
+
+[data-mantine-color-scheme="dark"] .successBanner {
+  background-color: rgba(47, 158, 68, 0.2);
+}
+
+[data-mantine-color-scheme="dark"] .warningBanner {
+  background-color: rgba(250, 176, 5, 0.2);
+}
+
+[data-mantine-color-scheme="dark"] .infoBanner {
+  background-color: rgba(34, 139, 230, 0.2);
+}
+
+[data-mantine-color-scheme="dark"] .successTitle {
+  color: var(--mantine-color-green-4);
+}
+
+[data-mantine-color-scheme="dark"] .warningTitle {
+  color: var(--mantine-color-yellow-4);
+}
+
+[data-mantine-color-scheme="dark"] .infoTitle {
+  color: var(--mantine-color-blue-4);
+}
+
+/* Responsive design */
+@media (max-width: 755px) {
+  .wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image {
+    flex: none;
+    width: 100%;
+  }
+
+  .controls {
+    flex-direction: column;
+    gap: var(--mantine-spacing-xs);
+  }
+
+  .input {
+    border-radius: var(--mantine-radius-md);
+    border-right: 1px solid var(--mantine-color-gray-4);
+  }
+
+  .control {
+    border-radius: var(--mantine-radius-md);
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+}

@@ -1,0 +1,54 @@
+.wrapper {
+  position: relative;
+}
+
+.input {
+  height: auto;
+  padding-top: 22px;
+  padding-bottom: 3px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.label {
+  position: absolute;
+  pointer-events: none;
+  padding-left: var(--mantine-spacing-sm);
+  padding-top: calc(var(--mantine-spacing-sm) / 2);
+  z-index: 1;
+  top: 0;
+  height: 28px;
+  line-height: 28px;
+  width: 34px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  background-color: transparent;
+}
+
+.slider {
+  position: absolute;
+  width: 100%;
+  bottom: -1px;
+}
+
+.thumb {
+  width: 16px;
+  height: 16px;
+  background-color: var(--mantine-color-blue-6);
+  border: none;
+}
+
+.track::before {
+  background-color: var(--mantine-color-gray-4);
+}
+
+.bar {
+  border-radius: 0;
+}
+
+.mark {
+  display: flex;
+}

@@ -1,0 +1,221 @@
+/* 404 Not Found styles */
+.root {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.label {
+  text-align: center;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 1;
+  margin-bottom: calc(1.5 * var(--mantine-spacing-xl));
+  color: var(--mantine-color-gray-2);
+}
+
+.description {
+  max-width: 500px;
+  margin: auto;
+  margin-top: var(--mantine-spacing-xl);
+  margin-bottom: calc(1.5 * var(--mantine-spacing-xl));
+}
+
+.title {
+  font-family: 'Outfit', var(--mantine-font-family);
+  text-align: center;
+  font-weight: 500;
+  font-size: 38px;
+}
+
+/* 500 Server Error styles */
+.serverRoot {
+  padding-top: 80px;
+  padding-bottom: 120px;
+  background-color: var(--mantine-color-blue-filled);
+}
+
+.serverLabel {
+  text-align: center;
+  font-weight: 500;
+  font-size: 220px;
+  line-height: 1;
+  margin-bottom: calc(var(--mantine-spacing-xl) * 1.5);
+  color: var(--mantine-color-blue-3);
+}
+
+.serverTitle {
+  font-family: Outfit, var(--mantine-font-family);
+  text-align: center;
+  font-weight: 500;
+  font-size: 38px;
+  color: var(--mantine-color-white);
+}
+
+.serverDescription {
+  max-width: 540px;
+  margin: auto;
+  margin-top: var(--mantine-spacing-xl);
+  margin-bottom: calc(var(--mantine-spacing-xl) * 1.5);
+  color: var(--mantine-color-blue-1);
+}
+
+/* 503 Server Overload styles */
+.overloadRoot {
+  padding-top: 80px;
+  padding-bottom: 120px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.overloadLabel {
+  text-align: center;
+  font-weight: 500;
+  font-size: 220px;
+  line-height: 1;
+  margin-bottom: calc(var(--mantine-spacing-xl) * 1.5);
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.overloadTitle {
+  font-family: Outfit, var(--mantine-font-family);
+  text-align: center;
+  font-weight: 500;
+  font-size: 38px;
+  color: var(--mantine-color-white);
+}
+
+.overloadDescription {
+  max-width: 540px;
+  margin: auto;
+  margin-top: var(--mantine-spacing-xl);
+  margin-bottom: calc(var(--mantine-spacing-xl) * 1.5);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Nothing Found Background styles */
+.nothingRoot {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  min-height: 400px;
+}
+
+.nothingInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--mantine-spacing-xl);
+}
+
+.nothingImage {
+  flex: 0 0 300px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--mantine-color-gray-0);
+  border-radius: var(--mantine-radius-md);
+}
+
+.nothingContent {
+  flex: 1;
+}
+
+.nothingTitle {
+  color: var(--mantine-color-black);
+  font-family: Outfit, var(--mantine-font-family);
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: var(--mantine-spacing-md);
+}
+
+.nothingDescription {
+  color: var(--mantine-color-dimmed);
+  line-height: 1.4;
+}
+
+/* Not Found Image styles */
+.imageRoot {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.imageInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--mantine-spacing-xl);
+}
+
+.imageContent {
+  flex: 1;
+}
+
+.imageTitle {
+  color: var(--mantine-color-black);
+  font-family: Outfit, var(--mantine-font-family);
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: var(--mantine-spacing-md);
+}
+
+.imageContainer {
+  flex: 0 0 400px;
+}
+
+.imagePlaceholder {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--mantine-color-gray-0);
+  border-radius: var(--mantine-radius-lg);
+  border: 1px solid var(--mantine-color-gray-3);
+}
+
+/* Dark theme adjustments */
+[data-mantine-color-scheme="dark"] .nothingImage,
+[data-mantine-color-scheme="dark"] .imagePlaceholder {
+  background: var(--mantine-color-dark-6);
+  border-color: var(--mantine-color-dark-4);
+}
+
+[data-mantine-color-scheme="dark"] .nothingTitle,
+[data-mantine-color-scheme="dark"] .imageTitle,
+[data-mantine-color-scheme="dark"] .title {
+  color: var(--mantine-color-white);
+}
+
+/* Responsive design */
+@media (max-width: 755px) {
+  .label {
+    font-size: 32px;
+  }
+
+  .title,
+  .serverTitle,
+  .overloadTitle,
+  .nothingTitle,
+  .imageTitle {
+    font-size: 32px;
+  }
+
+  .serverLabel,
+  .overloadLabel {
+    font-size: 120px;
+  }
+
+  .nothingInner,
+  .imageInner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nothingImage,
+  .imageContainer {
+    flex: none;
+    width: 100%;
+  }
+
+  .imageContainer {
+    order: -1;
+  }
+}

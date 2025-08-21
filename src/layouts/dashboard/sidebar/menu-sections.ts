@@ -97,6 +97,10 @@ export const menu: MenuItem[] = [
         icon: PiSquaresFourDuotone,
         dropdownItems: [
           {
+            name: 'Core UI',
+            href: paths.dashboard.widgets.applicationUi.coreUi,
+          },
+          {
             name: 'Authentication',
             href: paths.dashboard.widgets.applicationUi.authentication,
           },
@@ -119,6 +123,62 @@ export const menu: MenuItem[] = [
           {
             name: 'Data Display',
             href: paths.dashboard.widgets.applicationUi.dataDisplay,
+          },
+          {
+            name: 'Navbars',
+            href: paths.dashboard.widgets.applicationUi.navbars,
+          },
+          {
+            name: 'Headers',
+            href: paths.dashboard.widgets.applicationUi.headers,
+          },
+          {
+            name: 'Footers',
+            href: paths.dashboard.widgets.applicationUi.footers,
+          },
+          {
+            name: 'Grids',
+            href: paths.dashboard.widgets.applicationUi.grids,
+          },
+          {
+            name: 'User Info',
+            href: paths.dashboard.widgets.applicationUi.userInfo,
+          },
+          {
+            name: 'Inputs',
+            href: paths.dashboard.widgets.applicationUi.inputs,
+          },
+          {
+            name: 'Buttons',
+            href: paths.dashboard.widgets.applicationUi.buttons,
+          },
+          {
+            name: 'Sliders',
+            href: paths.dashboard.widgets.applicationUi.sliders,
+          },
+          {
+            name: 'Dropzones',
+            href: paths.dashboard.widgets.applicationUi.dropzones,
+          },
+          {
+            name: 'Application Cards',
+            href: paths.dashboard.widgets.applicationUi.applicationCards,
+          },
+          {
+            name: 'Stats',
+            href: paths.dashboard.widgets.applicationUi.stats,
+          },
+          {
+            name: 'Tables',
+            href: paths.dashboard.widgets.applicationUi.tables,
+          },
+          {
+            name: 'Drag & Drop',
+            href: paths.dashboard.widgets.applicationUi.dragDrop,
+          },
+          {
+            name: 'Carousels',
+            href: paths.dashboard.widgets.applicationUi.carousels,
           },
         ],
       },
@@ -151,6 +211,18 @@ export const menu: MenuItem[] = [
             name: 'Footers',
             href: paths.dashboard.widgets.pageSections.footers,
           },
+          {
+            name: 'Authentication',
+            href: paths.dashboard.widgets.pageSections.authentication,
+          },
+          {
+            name: 'Error Pages',
+            href: paths.dashboard.widgets.pageSections.errorPages,
+          },
+          {
+            name: 'Banners',
+            href: paths.dashboard.widgets.pageSections.banners,
+          },
         ],
       },
       {
@@ -173,6 +245,10 @@ export const menu: MenuItem[] = [
           {
             name: 'Authors',
             href: paths.dashboard.widgets.blogUi.authors,
+          },
+          {
+            name: 'Table of Contents',
+            href: paths.dashboard.widgets.blogUi.tableOfContents,
           },
         ],
       },

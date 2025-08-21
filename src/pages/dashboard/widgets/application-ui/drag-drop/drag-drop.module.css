@@ -1,0 +1,117 @@
+.sortableItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--mantine-spacing-md);
+}
+
+.dragHandle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--mantine-radius-sm);
+  cursor: grab;
+  color: var(--mantine-color-dimmed);
+  transition: all 0.2s ease;
+}
+
+.dragHandle:hover {
+  background-color: var(--mantine-color-gray-1);
+  color: var(--mantine-color-gray-7);
+}
+
+.dragHandle:active {
+  cursor: grabbing;
+}
+
+.listItem {
+  flex: 1;
+  transition: all 0.2s ease;
+}
+
+.symbol {
+  width: 60px;
+  color: var(--mantine-color-blue-6);
+}
+
+.sortableCard {
+  transition: all 0.2s ease;
+  cursor: grab;
+}
+
+.sortableCard:active {
+  cursor: grabbing;
+}
+
+.cardItem {
+  transition: all 0.2s ease;
+}
+
+.tableDragHandle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  color: var(--mantine-color-dimmed);
+  padding: var(--mantine-spacing-xs);
+  border-radius: var(--mantine-radius-sm);
+  transition: all 0.2s ease;
+}
+
+.tableDragHandle:hover {
+  background-color: var(--mantine-color-gray-1);
+  color: var(--mantine-color-gray-7);
+}
+
+.tableDragHandle:active {
+  cursor: grabbing;
+}
+
+.simpleItem {
+  padding: var(--mantine-spacing-md);
+  border: 1px solid var(--mantine-color-gray-3);
+  border-radius: var(--mantine-radius-md);
+  background-color: var(--mantine-color-white);
+  cursor: grab;
+  transition: all 0.2s ease;
+}
+
+.simpleItem:hover {
+  background-color: var(--mantine-color-gray-0);
+  border-color: var(--mantine-color-gray-4);
+}
+
+.simpleItem:active {
+  cursor: grabbing;
+}
+
+.isDragging {
+  opacity: 0.8;
+  transform: rotate(5deg);
+  z-index: 999;
+  box-shadow: var(--mantine-shadow-lg);
+}
+
+@media (prefers-color-scheme: dark) {
+  .dragHandle:hover {
+    background-color: var(--mantine-color-dark-6);
+    color: var(--mantine-color-gray-3);
+  }
+  
+  .tableDragHandle:hover {
+    background-color: var(--mantine-color-dark-6);
+    color: var(--mantine-color-gray-3);
+  }
+  
+  .simpleItem {
+    background-color: var(--mantine-color-dark-6);
+    border-color: var(--mantine-color-dark-4);
+  }
+  
+  .simpleItem:hover {
+    background-color: var(--mantine-color-dark-5);
+    border-color: var(--mantine-color-dark-3);
+  }
+}
